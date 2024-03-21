@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+// import Button from './components/Button';
+// import Heart from './components/Heart';
+// import Input from './components/Input';
+// import { ReactComponent as MenuIcon } from '../src/assets/icons/menu.svg';
+// import Toggle from './components/Toggle';
+import Category from './components/Category';
+import Contact from './components/Contact';
+import Divider from './components/Divider';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import ProductCard from './components/ProductCard';
+import SubHeader from './components/SubHeader';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Header />
+            <SubHeader />
+            <ProductCard />
+            {/* <div>
+                <Button
+                    icon={<MenuIcon />}
+                    full
+                    onClick={() => {}}
+                    text="placholder"
+                />
+            </div>
+            <div>
+                <Input placeholder="placeholder" onChange={() => {}} />
+            </div>
+            <div>
+                <Heart />
+            </div>
+            <div>
+                <Toggle size="sm" />
+            </div> */}
+            <Divider />
+            <Contact />
+            <Divider />
+            <Category />
+            <Divider />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
